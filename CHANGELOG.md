@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## [0.0.2](https://github.com/RustUse/use-id/compare/use-id-v0.0.1...use-id-v0.0.2) - 2026-05-13
+
+### Changed
+
+- Add initial workspace scaffold and CI/tooling
+
 ### Added
 
 - Added the initial `use-id` multi-crate workspace scaffold.

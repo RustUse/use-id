@@ -18,7 +18,7 @@ license = "MIT OR Apache-2.0"
 publish = false
 repository = "https://github.com/RustUse/use-id"
 rust-version = "1.95.0"
-version = "0.0.1"
+version = "0.0.2"
 
 [workspace.dependencies]
 ulid = "1.2.1"
