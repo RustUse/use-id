@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "crates/use-id",
+    "crates/use-identifier",
+    "crates/use-slug",
+    "crates/use-stable-id",
+    "crates/use-id-prefix",
+    "crates/use-uuid",
+    "crates/use-ulid",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+publish = false
+repository = "https://github.com/RustUse/use-id"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+ulid = "1.2.1"
+uuid = { version = "1.18.1", default-features = false, features = ["std"] }
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-identifier",
+    "use-slug",
+    "use-stable-id",
+    "use-id-prefix",
+    "use-uuid",
+    "use-ulid",
+    "use-id",
+]
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+expect_used = "warn"
+multiple_crate_versions = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"

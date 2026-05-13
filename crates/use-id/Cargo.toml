@@ -1,0 +1,44 @@
+[package]
+name = "use-id"
+description = "Composable facade crate for RustUse identifier primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-id"
+keywords = ["id", "identifier", "slug", "uuid", "ulid"]
+categories = ["data-structures", "rust-patterns"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+default = ["full"]
+identifier = ["dep:use-identifier"]
+slug = ["dep:use-slug"]
+stable-id = ["dep:use-stable-id"]
+id-prefix = ["dep:use-id-prefix"]
+uuid = ["dep:use-uuid"]
+ulid = ["dep:use-ulid"]
+full = ["identifier", "slug", "stable-id", "id-prefix", "uuid", "ulid"]
+
+[dependencies]
+use-id-prefix = { version = "0.0.1", path = "../use-id-prefix", optional = true }
+use-identifier = { version = "0.0.1", path = "../use-identifier", optional = true }
+use-slug = { version = "0.0.1", path = "../use-slug", optional = true }
+use-stable-id = { version = "0.0.1", path = "../use-stable-id", optional = true }
+use-ulid = { version = "0.0.1", path = "../use-ulid", optional = true }
+use-uuid = { version = "0.0.1", path = "../use-uuid", optional = true }
+
+[[example]]
+name = "facade_identifier_slug"
+path = "examples/facade_identifier_slug.rs"
+required-features = ["identifier", "slug"]
+
+[lints]
+workspace = true
