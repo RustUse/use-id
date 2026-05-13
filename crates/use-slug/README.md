@@ -1,4 +1,4 @@
-# use-slug
+# use-id-slug
 
 Human-readable slug normalization and validation helpers for `RustUse`.
 
@@ -6,12 +6,14 @@ Human-readable slug normalization and validation helpers for `RustUse`.
 
 ```toml
 [dependencies]
-use-slug = "0.0.1"
+use-id-slug = "0.0.1"
 ```
+
+The published package keeps the Rust crate name `use_slug`, so code imports stay the same.
 
 ## Foundation
 
-`use-slug` keeps slug behavior explicit and predictable: normalize free-form text into lowercase ASCII segments joined by hyphens, then validate the canonical form.
+`use-id-slug` keeps slug behavior explicit and predictable: normalize free-form text into lowercase ASCII segments joined by hyphens, then validate the canonical form.
 
 ## Example
 
@@ -27,7 +29,7 @@ assert_eq!(slug.segments().collect::<Vec<_>>(), vec!["rustuse", "docs"]);
 
 ## When to use directly
 
-Choose `use-slug` when human-readable identifiers are the only ID surface you need.
+Choose `use-id-slug` when human-readable identifiers are the only ID surface you need.
 
 ## Scope
 
@@ -37,4 +39,4 @@ Choose `use-slug` when human-readable identifiers are the only ID surface you ne
 
 ## Status
 
-`use-slug` is a pre-1.0 crate with a deliberately narrow API.
+`use-id-slug` is a pre-1.0 crate with a deliberately narrow API.

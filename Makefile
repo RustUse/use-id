@@ -1,6 +1,6 @@
 .PHONY: help fmt check lint test test-minimal build doc examples audit deny sbom publish-dry-run-focused publish-dry-run-facade release-readiness facade-post-publish-validation verify
 
-FOCUSED_CRATES := use-identifier use-slug use-stable-id use-id-prefix use-uuid use-ulid
+FOCUSED_CRATES := use-identifier use-id-slug use-stable-id use-id-prefix use-uuid use-ulid
 
 help:
 	@printf "%s\n" \

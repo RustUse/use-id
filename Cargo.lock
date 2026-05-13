@@ -186,8 +186,8 @@ name = "use-id"
 version = "0.0.1"
 dependencies = [
  "use-id-prefix",
+ "use-id-slug",
  "use-identifier",
- "use-slug",
  "use-stable-id",
  "use-ulid",
  "use-uuid",
@@ -198,11 +198,11 @@ name = "use-id-prefix"
 version = "0.0.1"
 
 [[package]]
-name = "use-identifier"
+name = "use-id-slug"
 version = "0.0.1"
 
 [[package]]
-name = "use-slug"
+name = "use-identifier"
 version = "0.0.1"
 
 [[package]]

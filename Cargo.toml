@@ -29,7 +29,7 @@ publish = false
 versioning = "lockstep-0.x"
 first-publish-candidates = [
     "use-identifier",
-    "use-slug",
+    "use-id-slug",
     "use-stable-id",
     "use-id-prefix",
     "use-uuid",

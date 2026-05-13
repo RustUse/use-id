@@ -139,7 +139,7 @@
             "problemMatcher": []
         },
         {
-            "label": "cargo: publish dry-run use-slug",
+            "label": "cargo: publish dry-run use-id-slug",
             "type": "shell",
             "command": "cargo",
             "args": [
@@ -147,7 +147,7 @@
                 "--dry-run",
                 "--allow-dirty",
                 "-p",
-                "use-slug"
+                "use-id-slug"
             ],
             "problemMatcher": []
         },
@@ -157,7 +157,7 @@
             "command": "bash",
             "args": [
                 "-lc",
-                "set -euo pipefail; for crate in use-identifier use-slug use-stable-id use-id-prefix use-uuid use-ulid; do cargo package --list -p \"$crate\"; cargo publish --dry-run --allow-dirty -p \"$crate\"; done"
+                "set -euo pipefail; for crate in use-identifier use-id-slug use-stable-id use-id-prefix use-uuid use-ulid; do cargo package --list -p \"$crate\"; cargo publish --dry-run --allow-dirty -p \"$crate\"; done"
             ],
             "windows": {
                 "command": "powershell",
@@ -166,7 +166,7 @@
                     "-ExecutionPolicy",
                     "Bypass",
                     "-Command",
-                    "$ErrorActionPreference = 'Stop'; $crates = @('use-identifier','use-slug','use-stable-id','use-id-prefix','use-uuid','use-ulid'); foreach ($crate in $crates) { cargo package --list -p $crate; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; cargo publish --dry-run --allow-dirty -p $crate; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE } }"
+                    "$ErrorActionPreference = 'Stop'; $crates = @('use-identifier','use-id-slug','use-stable-id','use-id-prefix','use-uuid','use-ulid'); foreach ($crate in $crates) { cargo package --list -p $crate; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; cargo publish --dry-run --allow-dirty -p $crate; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE } }"
                 ]
             },
             "problemMatcher": []

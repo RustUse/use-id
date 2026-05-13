@@ -11,7 +11,7 @@ release = true
 version_group = "rustuse-id"
 
 [[package]]
-name = "use-slug"
+name = "use-id-slug"
 release = true
 version_group = "rustuse-id"
 
@@ -43,7 +43,7 @@ changelog_update = true
 changelog_path = "./CHANGELOG.md"
 changelog_include = [
   "use-identifier",
-  "use-slug",
+  "use-id-slug",
   "use-stable-id",
   "use-id-prefix",
   "use-uuid",

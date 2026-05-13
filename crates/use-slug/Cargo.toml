@@ -1,5 +1,5 @@
 [package]
-name = "use-slug"
+name = "use-id-slug"
 description = "Composable human-readable slug primitives for RustUse"
 publish = true
 authors.workspace = true
@@ -10,9 +10,12 @@ license.workspace = true
 repository.workspace = true
 rust-version.workspace = true
 readme = "README.md"
-documentation = "https://docs.rs/use-slug"
+documentation = "https://docs.rs/use-id-slug"
 keywords = ["slug", "id", "text", "normalize", "validate"]
 categories = ["text-processing", "rust-patterns"]
+
+[lib]
+name = "use_slug"
 
 [[example]]
 name = "use-slug-basic-usage"

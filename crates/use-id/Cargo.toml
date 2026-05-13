@@ -30,7 +30,7 @@ full = ["identifier", "slug", "stable-id", "id-prefix", "uuid", "ulid"]
 [dependencies]
 use-id-prefix = { version = "0.0.1", path = "../use-id-prefix", optional = true }
 use-identifier = { version = "0.0.1", path = "../use-identifier", optional = true }
-use-slug = { version = "0.0.1", path = "../use-slug", optional = true }
+use-slug = { package = "use-id-slug", version = "0.0.1", path = "../use-slug", optional = true }
 use-stable-id = { version = "0.0.1", path = "../use-stable-id", optional = true }
 use-ulid = { version = "0.0.1", path = "../use-ulid", optional = true }
 use-uuid = { version = "0.0.1", path = "../use-uuid", optional = true }

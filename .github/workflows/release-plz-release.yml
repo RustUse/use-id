@@ -27,7 +27,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PUBLISHED_CRATES: >-
-                use-identifier use-slug use-stable-id use-id-prefix use-uuid use-ulid use-id
+                use-identifier use-id-slug use-stable-id use-id-prefix use-uuid use-ulid use-id
         steps:
             - name: Check out repository
               uses: actions/checkout@v4

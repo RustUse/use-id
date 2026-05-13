@@ -8,7 +8,7 @@ Composable identifier, slug, sequence, and stable-reference primitives for Rust.
 | ---------------- | ------------------------ | ------------------------------------------------------------- |
 | `use-id`         | `crates/use-id/`         | Feature-gated facade over the focused identifier crates       |
 | `use-identifier` | `crates/use-identifier/` | String-backed and typed identifier primitives                 |
-| `use-slug`       | `crates/use-slug/`       | Human-readable slug normalization and validation              |
+| `use-id-slug`    | `crates/use-slug/`       | Human-readable slug normalization and validation (`use_slug`) |
 | `use-stable-id`  | `crates/use-stable-id/`  | Deterministic stable ID helpers for names, content, and paths |
 | `use-id-prefix`  | `crates/use-id-prefix/`  | Prefixed identifier parsing and formatting                    |
 | `use-uuid`       | `crates/use-uuid/`       | Thin UUID parsing and formatting helpers                      |
